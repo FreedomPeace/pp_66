@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head> 
+    <meta charset="utf-8">
+     
+    <title>菜鸟教程(runoob.com)</title> 
+</head>
+<body>
+
+<h1>我的第一个 JavaScript </h1>
+<img id="img" border="0" src="./images/pulpit.jpg"  alt="Pulpit rock" width="304" height="228">
+
+<p id="demo">
+    JavaScript 可以触发事件，就像按钮点击。</p>
+
+    <script>
+    function myFunction()
+    {
+        document.getElementById("demo").innerHTML="Hello JavaScript!";
+        window.ObjForJs.takePhoto("toast");
+    }
+    function showFromAndroid(path)
+    {
+        document.getElementById("demo").innerHTML=path;
+        var img=document.getElementById("img");
+        img.src=path;
+    }
+
+    </script>
+
+<button type="button" onclick="myFunction()">点我</button>
+</body>
+</html>
